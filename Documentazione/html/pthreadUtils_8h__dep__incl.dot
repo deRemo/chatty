@@ -1,0 +1,20 @@
+digraph "pthreadUtils.h"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node2 [label="pthreadUtils.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="chatty.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$chatty_8c.html",tooltip="File principale del server chatterbox. "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="historyQueue.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$historyQueue_8c.html",tooltip="file che implementa le code dei messaggi ricevuti da un client "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="icl_hash.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$icl__hash_8c.html",tooltip="Dependency free hash table implementation, slightly modified by Remo Andreoli to implement section lo..."];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="listener.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$listener_8c.html",tooltip="implementazione delle funzioni del listener in server.h "];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="pthreadUtils.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$pthreadUtils_8c.html",tooltip="file che implementa la gestione degli errori per pthread.h "];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="queue.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$queue_8c.html",tooltip="File di implementazione dell&#39;interfaccia per la coda, aggiunte alcune funzioni in fondo..."];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="threadPool.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$threadPool_8c.html",tooltip="Implementazione del threadpool. "];
+}
